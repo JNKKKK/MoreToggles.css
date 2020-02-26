@@ -6,6 +6,8 @@
 
 You only have to add a new ClassName to the wrapper div and `MoreToggles.css` will do the magic for you.
 
+[Documentation]() / [Demo]()
+
 **Features**
 
 🔹  Pure CSS
@@ -40,7 +42,7 @@ Or, if you are not satisfied with the default color and want to apply another pr
 ## Styles
 `MoreToggles.css` currently has 8 different styles. And for each style, several color palettes are provided.
 
-For a full reference, go to [this playground]() where you can find **all available classes**
+For a **full reference**, go to [this playground]() where you can find **all available classes**
 
 | Class Name    | Optional Color Palettes | | | |
 | ------------- |-------------|-----|-----|-----|
@@ -52,6 +54,14 @@ For a full reference, go to [this playground]() where you can find **all availab
 |mt-square|mt-square-garden|mt-square-tomato|mt-square-matcha|mt-square-pink|
 |mt-square3d|mt-square3d-garden|mt-square3d-tomato|mt-square3d-matcha|mt-square3d-blush|
 |mt-emoji-mood|mt-emoji-gender|mt-emoji-pet|mt-emoji-mute|mt-emoji-like|
+
+## Scaling
+
+## Disable Toggles
+
+## Listen to the change event
+
+
 ## License
 MoreToggles.css is licensed under the MIT license. (https://opensource.org/licenses/MIT)
 

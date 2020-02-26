@@ -1,5 +1,22 @@
 {
+  "name": "moretoggles.css",
+  "version": "0.0.1",
+  "main": "src/moretoggles.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JNKKKK/MoreToggles.css.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Enkai Ji"
+  },
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "sass": "^1.25.0"
+  },
+  "scripts": {
+    "build": "parcel build ./src/moretoggles.scss -d ./output/ --out-file moretoggles.min.css --no-source-maps",
+    "serve-alltoggles": "parcel ./doc/src/allToggles.html",
+    "build-alltoggles": "parcel build ./doc/src/allToggles.html -d ./doc/ --no-source-maps --no-content-hash"
   }
 }

@@ -2,11 +2,11 @@
 
 ![Toggles _1_.png](https://i.loli.net/2020/02/26/L92TdZF4sADtoVO.png)
 
-`MoreToggles.css` is a pure CSS library that provides you with a variety of **nice-looking toggles**. 
+`MoreToggles.css` is a **pure CSS** library that provides you with a variety of **nice-looking toggles**. 
 
 You only have to add a new ClassName to the wrapper div and `MoreToggles.css` will do the magic for you.
 
-[Documentation]() / [Demo]()
+[Check out **all available styles** here](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
 
 **Features**
 
@@ -42,7 +42,7 @@ Or, if you are not satisfied with the default color and want to apply another pr
 ## Styles
 `MoreToggles.css` currently has 8 different styles. And for each style, several color palettes are provided.
 
-For a **full reference**, go to [this playground]() where you can find **all available classes**
+[Check out **all available styles** here](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
 
 | Class Name    | Optional Color Palettes | | | |
 | ------------- |-------------|-----|-----|-----|
@@ -93,6 +93,29 @@ Since the toggle is actually an `<input>` with `type="checkbox"`, you can use ad
   });
 </script>
 ```
+## Notice
+
+Nest the `<input>` directly inside the `<label>` is **NOT supported**, although it is valid HTML syntax.
+
+**Don't** ☹️
+```html
+<div class="mt-ios"> 
+  <label>
+    <input type="checkbox" />
+  </label>
+</div>
+```
+**Do** 😃
+```html
+<div class="mt-ios"> 
+  <input id="1" type="checkbox" />
+  <label for="1"></label>
+</div>
+```
+
+
+
+
 ## License
 MoreToggles.css is licensed under the MIT license. (https://opensource.org/licenses/MIT)
 

@@ -8,12 +8,35 @@ body {
 }
 
 .root {
-  margin: 6em 6em;
+  margin: 6em 0;
   padding: 0 1em;
   border-radius: 1em;
   width: 100%;
   background: #f5f5f5;
   box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
+}
+
+.root {
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 2300px) {
+  .root {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width:1700px) {
+  .root {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .root {
+    width: 100%;
+  }
 }
 
 .row-wrapper {

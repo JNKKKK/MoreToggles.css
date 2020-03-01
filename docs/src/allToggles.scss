@@ -1,38 +1,67 @@
 body {
   background: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   margin: 0;
 }
 
+.header {
+  margin-top: 60px;
+  flex-direction: "row";
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 80px;
+  .text {
+    font-family: "Open Sans";
+    font-weight: lighter;
+  }
+
+  .toggle {
+    font-family: "Open Sans";
+    font-weight: lighter;
+    border-radius: 0.7em;
+    background: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66));
+    width: 1.9em;
+    height: 0.8em;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.2em;
+    .circle {
+      position: relative;
+      left: 0.1em;
+      top: 0.1em;
+      width: 0.6em;
+      height: 0.6em;
+      border-radius: 1em;
+      /*   border: solid 0.03em black; */
+      background: white;
+    }
+    .re {
+      color: white;
+      line-height: 0.6;
+      margin-left: 0.15em;
+    }
+  }
+}
+
 .root {
-  margin: 6em 0;
+  margin: 6em auto;
+  width: 65%;
   padding: 0 1em;
   border-radius: 1em;
-  width: 100%;
   background: #f5f5f5;
   box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
+  font-size: 13px;
 }
-
-.root {
-  float: left;
-  width: 50%;
-}
-
 @media screen and (max-width: 2300px) {
   .root {
     width: 65%;
   }
 }
-
-@media screen and (max-width:1700px) {
+@media screen and (max-width: 1700px) {
   .root {
     width: 85%;
   }
 }
-
 @media screen and (max-width: 800px) {
   .root {
     width: 100%;

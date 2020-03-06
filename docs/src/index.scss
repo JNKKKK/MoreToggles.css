@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   background: #fff;
   margin: 0;
@@ -5,21 +9,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .header {
-  flex-direction: "row";
+  flex-direction: row;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   font-size: 80px;
-  .text {
-    font-family: "Open Sans";
-    font-weight: lighter;
-  }
-
+  font-family: "Open Sans", sans-serif;
   .toggle {
-    font-family: "Open Sans";
     font-weight: lighter;
     border-radius: 0.7em;
     background: linear-gradient(45deg, rgb(0, 143, 104), rgb(250, 224, 66));
@@ -35,7 +35,6 @@ body {
       width: 0.6em;
       height: 0.6em;
       border-radius: 1em;
-      /*   border: solid 0.03em black; */
       background: white;
     }
     .re {
@@ -47,10 +46,40 @@ body {
 }
 
 .subtitle {
-    margin: 2rem 0;
-    font-size: 20px;
-    font-weight: 100;
-    text-align: center;
-    // line-height: 2;
+  margin: 2rem 0;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
 }
 
+.toggle-animation-container {
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  div {
+    display: none;
+    position: absolute;
+  }
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  background-image: linear-gradient(to right, #fff 0%, #ccc 50%, #fff 100%);
+  width: 30rem;
+}
+
+.links {
+  color: #aaa;
+  a {
+    color: #888;
+    &:hover {
+      color: rgb(0, 143, 104);
+    }
+  }
+}

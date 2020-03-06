@@ -1,6 +1,6 @@
 # MoreToggles.css
 
-![Toggles _1_.png](https://i.loli.net/2020/02/26/L92TdZF4sADtoVO.png)
+![Toggles _1_.png](https://i.loli.net/2020/03/06/WRC2jYFuo1SqpVZ.png)
 
 `MoreToggles.css` is a **pure CSS** library that provides you with a variety of **nice-looking toggles**. 
 

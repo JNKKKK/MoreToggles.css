@@ -1,0 +1,62 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-icon {
+  @include wrapper;
+  label {
+    // background
+    @include label;
+    width: 7em;
+    height: 3em;
+    // border-radius: 50px;
+    background: transparent;
+    border: 0.2em solid #fff;
+    transition: all 0.3s ease;
+    clip-path: path("M15,45 A30,30,0,0,1,75,45 A30,30,0,0,1,135,45 Q135,90,75,130 Q15,90,15,45 Z");
+    &:before {
+      // circle
+      @include before-after;
+      width: 2em;
+      height: 2em;
+      top: 0.3em;
+      left: 0.3em;
+      // border-radius: 2em;
+      background: #333;
+      transition: 0.3s ease;
+    }
+  }
+  input {
+    @include input-checkbox;
+    &:before,
+    &:after {
+      @include before-after;
+    }
+  }
+  input:checked + label {
+    // background
+    background: rgba(0, 0, 0, 0.2);
+    &:before {
+      // circle
+      transform: translateX(4em);
+    }
+  }
+  input:disabled {
+    & + label {
+      // background
+      background: #ccc !important;
+      cursor: not-allowed !important;
+      &:before {
+        // moving square
+        background: #ccc !important;
+        box-shadow: 0 0 0.05em #555, 0 0 0.5em rgba(100, 100, 100, 0.6), 0 0.12em 2em transparent,
+          -0.12em 0.15em 0.2em transparent !important;
+      }
+      &:after {
+        // moving square
+        background: #ccc !important;
+        box-shadow: 0 0 0.05em #555, 0 0 0.5em rgba(100, 100, 100, 0.6), 0 0.12em 2em transparent,
+          -0.12em 0.15em 0.2em transparent !important;
+      }
+    }
+  }
+}

@@ -32,8 +32,9 @@ body {
       width: 0.6em;
       height: 0.6em;
       border-radius: 1em;
-      /*   border: solid 0.03em black; */
+      overflow: hidden;
       background: white;
+      color: white;
     }
     .re {
       color: white;
@@ -43,8 +44,20 @@ body {
   }
 }
 
+.links {
+  color: #aaa;
+  a {
+    color: #888;
+    &:hover {
+      color: rgb(0, 143, 104);
+    }
+  }
+  margin: 1em auto;
+  text-align: center;
+}
+
 .root {
-  margin: 6em auto;
+  margin: 4em auto;
   width: 65%;
   padding: 0 1em;
   border-radius: 1em;

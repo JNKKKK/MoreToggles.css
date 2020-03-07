@@ -1,0 +1,33 @@
+@mixin wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+@mixin input-checkbox {
+  position: absolute;
+  box-sizing: border-box;
+  height: 0;
+  width: 0;
+  // opacity: 0;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin label {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@mixin before-after {
+  content: "";
+  display: block;
+  position: absolute;
+}

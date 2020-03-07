@@ -17,9 +17,8 @@
   "scripts": {
     "build": "parcel build ./src/moretoggles.scss -d ./output/ --out-file moretoggles.min.css --no-source-maps",
     "serve-alltoggles": "parcel ./docs/src/allToggles.html",
-    "build-alltoggles": "parcel build ./docs/src/allToggles.html -d ./docs/ --no-source-maps --no-content-hash --public-url .",
+    "build-alltoggles": "parcel build ./docs/src/allToggles.html -d ./docs/ --no-source-maps --public-url .",
     "serve-index": "parcel ./docs/src/index.html",
-    "build-index": "parcel build ./docs/src/index.html -d ./docs/ --no-source-maps --no-content-hash --public-url ."
-  
+    "build-index": "parcel build ./docs/src/index.html -d ./docs/ --no-source-maps --public-url ."
   }
 }

@@ -1,0 +1,150 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-square3d {
+  @include wrapper;
+  label {
+    // background
+    @include label;
+    width: 7em;
+    height: 2em;
+    background: #fff;
+    box-shadow: inset 0 0.1em 0.03em rgba(0, 0, 0, 0.2), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.3),
+      0 0 2em rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+    &:before {
+      // square
+      @include before-after;
+      width: 3.6em;
+      height: 3.2em;
+      top: -0.7em;
+      left: -0.1em;
+      background: #f0134d;
+      border-bottom: 0.07em solid color.adjust(#f5137f, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#f5137f, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#f5137f, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+      transition: 0.5s cubic-bezier(0.52, -0.41, 0.55, 1.46);
+    }
+  }
+  input {
+    @include input-checkbox;
+  }
+  input:checked + label {
+    &:before {
+      // square
+      background: #40bfc1;
+      border-bottom: 0.07em solid color.adjust(#40bfc1, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#40bfc1, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#40bfc1, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        -0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+      transform: translateX(3.5em);
+    }
+  }
+  input:disabled {
+    & + label {
+      // background
+      background: #ccc !important;
+      cursor: not-allowed !important;
+      &:before {
+        // moving square
+        background: #ccc !important;
+        border-bottom: 0.07em solid #ccc !important;
+        box-shadow: 0 0.16em 0.01em #aaa, 0 0.12em 0.3em rgba(100, 100, 100, 0.6), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+          0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2) !important;
+      }
+    }
+  }
+}
+.mt-square3d-garden {
+  @extend .mt-square3d;
+  label {
+    &:before {
+      // square
+      background: #ff2e63;
+      border-bottom: 0.07em solid color.adjust(#ff2e63, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#ff2e63, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#ff2e63, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+  input:checked + label {
+    &:before {
+      // square
+      background: #21bf73;
+      border-bottom: 0.07em solid color.adjust(#21bf73, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#21bf73, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#21bf73, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        -0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+.mt-square3d-tomato {
+  @extend .mt-square3d;
+  label {
+    &:before {
+      // square
+      background: #ff6347;
+      border-bottom: 0.07em solid color.adjust(#ff6347, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#ff6347, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#ff6347, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+  input:checked + label {
+    &:before {
+      // square
+      background: #32cd32;
+      border-bottom: 0.07em solid color.adjust(#32cd32, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#32cd32, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#32cd32, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        -0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+.mt-square3d-matcha {
+  @extend .mt-square3d;
+  label {
+    &:before {
+      // square
+      background: #5b5656;
+      border-bottom: 0.07em solid color.adjust(#5b5656, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#5b5656, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#5b5656, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+  input:checked + label {
+    &:before {
+      // square
+      background: #7fcd91;
+      border-bottom: 0.07em solid color.adjust(#7fcd91, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#7fcd91, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#7fcd91, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        -0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+.mt-square3d-blush {
+  @extend .mt-square3d;
+  label {
+    &:before {
+      // square
+      background: #ff677d;
+      border-bottom: 0.07em solid color.adjust(#ff677d, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#ff677d, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#ff677d, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+  input:checked + label {
+    &:before {
+      // square
+      background: #9399ff;
+      border-bottom: 0.07em solid color.adjust(#9399ff, $lightness: +10%);
+      box-shadow: 0 0.16em 0.01em color.adjust(#9399ff, $lightness: -15%),
+        0 0.12em 0.3em color.adjust(#9399ff, $lightness: -15%, $alpha: -0.4), 0 0.12em 2em rgba(0, 0, 0, 0.3),
+        -0.12em 0.15em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+}

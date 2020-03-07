@@ -1,0 +1,153 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-check {
+  @include wrapper;
+  label {
+    // background
+    @include label;
+    width: 7em;
+    height: 3em;
+    border-radius: 1.5em;
+    background: #2e394d;
+    border: none;
+    transition: all 0.3s ease;
+    &:before {
+      // circle
+      @include before-after;
+      width: 2.4em;
+      height: 2.4em;
+      top: 0.3em;
+      left: 0.3em;
+      border-radius: 2.5em;
+      background: #f0134d;
+      transition: 0.3s ease;
+    }
+  }
+  input {
+    @include input-checkbox;
+    font-size: inherit;
+    &:before,
+    &:after {
+      // icon cross/check
+      @include before-after;
+      height: 0.25em;
+      border-radius: 0.125em;
+      background: #fff;
+      transition: 0.3s ease;
+      left: -4px;
+      top: -3px;
+    }
+    &:before {
+      // cross
+      width: 1.6875em;
+      transform: rotate(-45deg) translate(-0.525em, 1.425em);
+    }
+    &:after {
+      // cross
+      width: 1.6875em;
+      transform: rotate(45deg) translate(1.425em, 0.525em);
+    }
+  }
+  input:checked {
+    &:before {
+      // check
+      width: 1.5625em;
+      transform: rotate(-45deg) translate(2.5375em, 4.55em);
+    }
+    &:after {
+      // check
+      width: 0.73em;
+      transform: rotate(45deg) translate(4.55em, -2.1625em);
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      background: #40bfc1;
+      transform: translateX(4em);
+    }
+  }
+  input:disabled {
+    &:before,
+    &:after {
+      // icon cross/check
+      cursor: not-allowed !important;
+    }
+    & + label {
+      // background
+      background: #ccc !important;
+      cursor: not-allowed !important;
+      &:before {
+        // circle
+        background: #ddd !important;
+      }
+    }
+  }
+}
+.mt-check-garden {
+  @extend .mt-check;
+  label {
+    &:before {
+      // circle
+      background: #ff2e63;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      background: #21bf73;
+    }
+  }
+}
+.mt-check-pink {
+  @extend .mt-check;
+  label {
+    &:before {
+      // circle
+      background: #ffe3ed;
+    }
+  }
+  input {
+    &:before,
+    &:after {
+      background: #2e394d;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      background: #beebe9;
+    }
+  }
+}
+.mt-check-matte {
+  @extend .mt-check;
+  label {
+    &:before {
+      // circle
+      background: #c9485b;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      background: #75b79e;
+    }
+  }
+}
+.mt-check-fruit {
+  @extend .mt-check;
+  label {
+    &:before {
+      // circle
+      background: #ff8364;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      background: #5f6caf;
+    }
+  }
+}

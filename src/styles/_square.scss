@@ -1,0 +1,135 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-square {
+  @include wrapper;
+  label {
+    // background
+    @include label;
+    width: 8em;
+    height: 3em;
+    background: #fff;
+    transition: all 0.3s ease;
+    &:before {
+      // moving square
+      @include before-after;
+      width: 4em;
+      height: 3em;
+      background: #f0134d;
+      transition: 0.3s ease;
+      z-index: 1;
+    }
+  }
+  input {
+    @include input-checkbox;
+    font-size: inherit;
+    &:before,
+    &:after {
+      // background on-off label
+      @include before-after;
+      width: 4em;
+      height: 3em;
+      z-index: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #888;
+      letter-spacing: 1px;
+    }
+    &:before {
+      // background on-off label
+      content: "ON";
+      left: -3px;
+      top: -3px;
+    }
+    &:after {
+      // background on-off label
+      content: "OFF";
+      left: calc(4em - 3px);
+      top: -3px;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // moving square
+      background: #40bfc1;
+      transform: translateX(4em);
+    }
+  }
+  input:disabled {
+    &:before,
+    &:after {
+      // background on-off label
+      cursor: not-allowed !important;
+    }
+    & + label {
+      // background
+      background: #ccc !important;
+      cursor: not-allowed !important;
+      &:before {
+        // moving square
+        background: #ddd !important;
+      }
+    }
+  }
+}
+.mt-square-garden {
+  @extend .mt-square;
+  label {
+    &:before {
+      // moving square
+      background: #ff2e63;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // moving square
+      background: #21bf73;
+    }
+  }
+}
+.mt-square-tomato {
+  @extend .mt-square;
+  label {
+    &:before {
+      // moving square
+      background: #ff6347;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // moving square
+      background: #32cd32;
+    }
+  }
+}
+.mt-square-matcha {
+  @extend .mt-square;
+  label {
+    &:before {
+      // moving square
+      background: #5b5656;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // moving square
+      background: #7fcd91;
+    }
+  }
+}
+.mt-square-pink {
+  @extend .mt-square;
+  label {
+    &:before {
+      // moving square
+      background: #ffe3ed;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // moving square
+      background: #beebe9;
+    }
+  }
+}

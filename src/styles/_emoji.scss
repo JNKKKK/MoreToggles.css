@@ -1,0 +1,113 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-emoji {
+  @include wrapper;
+  label {
+    // background
+    @include label;
+    width: 7em;
+    height: 0.8em;
+    border-radius: 1em;
+    background: #fff;
+    border: 0.2em solid #888;
+    transition: all 0.3s ease;
+    &:before {
+      // circle
+      @include before-after;
+      font-size: 3em;
+      transition: 0.3s ease;
+      left: 0;
+      top: -0.6em;
+    }
+  }
+  input {
+    @include input-checkbox;
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      transform: translateX(0.8em);
+    }
+  }
+  input:disabled {
+    & + label {
+      cursor: not-allowed !important;
+    }
+  }
+}
+.mt-emoji-mood {
+  @extend .mt-emoji;
+  label {
+    &:before {
+      // circle
+      content: "😄";
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      content: "😠";
+    }
+  }
+}
+.mt-emoji-gender {
+  @extend .mt-emoji;
+  label {
+    &:before {
+      // circle
+      content: "👨";
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      content: "👩";
+    }
+  }
+}
+.mt-emoji-pet {
+  @extend .mt-emoji;
+  label {
+    &:before {
+      // circle
+      content: "🐶";
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      content: "🐱";
+    }
+  }
+}
+.mt-emoji-mute {
+  @extend .mt-emoji;
+  label {
+    &:before {
+      // circle
+      content: "🔇";
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      content: "🔊";
+    }
+  }
+}
+.mt-emoji-like {
+  @extend .mt-emoji;
+  label {
+    &:before {
+      // circle
+      content: "👍";
+    }
+  }
+  input:checked + label {
+    &:before {
+      // circle
+      content: "👎";
+    }
+  }
+}

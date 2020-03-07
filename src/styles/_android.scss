@@ -1,0 +1,75 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-android {
+  @include wrapper;
+  label {
+    // background
+    @include label;
+    width: 4em;
+    height: 1.75em;
+    border-radius: 0.875em;
+    background-image: linear-gradient(to right, #848484 0%, #848484 50%, #7cbcbf 50%, #7cbcbf 100%);
+    background-size: 8em 1.7em;
+    transition: all 0.3s ease;
+    &:before {
+      // circle
+      @include before-after;
+      width: 2.25em;
+      height: 2.25em;
+      top: -0.25em;
+      left: 0;
+      border-radius: 2em;
+      background: #fff;
+      transition: 0.3s ease;
+      box-shadow: 0 0.125em 0.375em rgba(0, 0, 0, 0.5);
+    }
+  }
+  input {
+    @include input-checkbox;
+  }
+  input:checked + label {
+    // background
+    background-position: -100%;
+    &:before {
+      // circle
+      transform: translateX(1.75em);
+    }
+  }
+  input:disabled {
+    & + label {
+      // background
+      background: #ccc !important;
+      cursor: not-allowed !important;
+      &:before {
+        // circle
+        background: #ccc !important;
+        box-shadow: 0 0.125em 0.375em rgba(0, 0, 0, 0.5) !important;
+      }
+    }
+  }
+}
+.mt-android-indigo {
+  @extend .mt-android;
+  label {
+    background-image: linear-gradient(to right, #848484 0%, #848484 50%, #9fa8da 50%, #9fa8da 100%);
+  }
+}
+.mt-android-violet {
+  @extend .mt-android;
+  label {
+    background-image: linear-gradient(to right, #848484 0%, #848484 50%, #ce93d8 50%, #ce93d8 100%);
+  }
+}
+.mt-android-pink {
+  @extend .mt-android;
+  label {
+    background-image: linear-gradient(to right, #848484 0%, #848484 50%, #f48fb1 50%, #f48fb1 100%);
+  }
+}
+.mt-android-orange {
+  @extend .mt-android;
+  label {
+    background-image: linear-gradient(to right, #848484 0%, #848484 50%, #ffcc80 50%, #ffcc80 100%);
+  }
+}

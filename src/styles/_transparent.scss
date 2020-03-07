@@ -1,0 +1,110 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-transparent {
+  @include wrapper;
+  label {
+    // background
+    @include label;
+    width: 7em;
+    height: 3em;
+    border-radius: 50px;
+    background: transparent;
+    border: 0.2em solid #333;
+    transition: all 0.3s ease;
+    &:before {
+      // circle
+      @include before-after;
+      width: 2em;
+      height: 2em;
+      top: 0.3em;
+      left: 0.3em;
+      border-radius: 2em;
+      background: #333;
+      transition: 0.3s ease;
+    }
+  }
+  input {
+    @include input-checkbox;
+  }
+  input:checked + label {
+    // background
+    background: rgba(0, 0, 0, 0.1);
+    &:before {
+      // circle
+      transform: translateX(4em);
+    }
+  }
+  input:disabled {
+    & + label {
+      // background
+      background: #ccc !important;
+      border: 0.2em solid #ccc !important;
+      cursor: not-allowed !important;
+      &:before {
+        // circle
+        background: #ddd !important;
+      }
+    }
+  }
+}
+.mt-transparent-navi {
+  @extend .mt-transparent;
+  label {
+    // background
+    border: 0.2em solid #015668;
+    &:before {
+      // circle
+      background: #015668;
+    }
+  }
+  input:checked + label {
+    // background
+    background: #0157682d;
+  }
+}
+.mt-transparent-blood {
+  @extend .mt-transparent;
+  label {
+    // background
+    border: 0.2em solid #801336;
+    &:before {
+      // circle
+      background: #801336;
+    }
+  }
+  input:checked + label {
+    // background
+    background: #8013362d;
+  }
+}
+.mt-transparent-violet {
+  @extend .mt-transparent;
+  label {
+    // background
+    border: 0.2em solid #400082;
+    &:before {
+      // circle
+      background: #400082;
+    }
+  }
+  input:checked + label {
+    // background
+    background: #4000822d;
+  }
+}
+.mt-transparent-brown {
+  @extend .mt-transparent;
+  label {
+    // background
+    border: 0.2em solid #b7472a;
+    &:before {
+      // circle
+      background: #b7472a;
+    }
+  }
+  input:checked + label {
+    // background
+    background: #b7472a2d;
+  }
+}

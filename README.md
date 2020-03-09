@@ -1,6 +1,10 @@
 # MoreToggles.css
 
-![Toggles _1_.png](https://i.loli.net/2020/03/06/WRC2jYFuo1SqpVZ.png)
+[![Toggles _1_.png](https://i.loli.net/2020/03/06/WRC2jYFuo1SqpVZ.png)](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
+
+![release badge](https://img.shields.io/github/v/release/JNKKKK/MoreToggles.css?include_prereleases&style=flat-square) ![license badge](https://img.shields.io/github/license/JNKKKK/MoreToggles.css?style=flat-square)
+
+------
 
 `MoreToggles.css` is a **pure CSS** library that provides you with a variety of **nice-looking toggles**. 
 

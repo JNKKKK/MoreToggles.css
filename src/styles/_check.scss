@@ -26,7 +26,6 @@
   }
   input {
     @include input-checkbox;
-    font-size: inherit;
     &:before,
     &:after {
       // icon cross/check
@@ -35,8 +34,6 @@
       border-radius: 0.125em;
       background: #fff;
       transition: 0.3s ease;
-      left: -4px;
-      top: -3px;
     }
     &:before {
       // cross

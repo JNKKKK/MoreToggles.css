@@ -22,7 +22,6 @@
   }
   input {
     @include input-checkbox;
-    font-size: inherit;
     &:before,
     &:after {
       // background on-off label
@@ -39,14 +38,11 @@
     &:before {
       // background on-off label
       content: "ON";
-      left: -3px;
-      top: -3px;
     }
     &:after {
       // background on-off label
       content: "OFF";
-      left: calc(4em - 3px);
-      top: -3px;
+      left: 4em;
     }
   }
   input:checked + label {

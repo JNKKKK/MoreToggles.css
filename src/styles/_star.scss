@@ -1,0 +1,106 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-star {
+  @include wrapper;
+  label {
+    // bound
+    @include label;
+    width: 5em;
+    height: 5em;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    clip-path: polygon(
+      88.42% 39.625%,
+      62.765% 36.275%,
+      51.645% 12.85%,
+      51.58018% 12.7258%,
+      48.355% 12.85%,
+      37.235% 36.275%,
+      11.58% 39.625%,
+      10.40617% 40.27148%,
+      10.565% 42.7%,
+      29.365% 60.54%,
+      24.62% 86.05%,
+      25.83849% 88.08153%,
+      27.285% 87.945%,
+      50% 75.545%,
+      72.715% 87.94%,
+      75.40571% 86.24281%,
+      75.38% 86.045%,
+      70.635% 60.53%,
+      89.435% 42.69%,
+      88.42% 39.625%,
+      67.405% 58.615%,
+      66.89479% 59.48382%,
+      66.88% 60.235%
+    );
+    &:before {
+      // background
+      @include before-after;
+      width: 5em;
+      height: 10em;
+      background: linear-gradient(#cac9d1 0%, #cac9d1 42%, #91e0f8 55%, #1b68cb 100%);
+      transition: 0.2s ease;
+    }
+  }
+  input {
+    @include input-checkbox;
+    &:before,
+    &:after {
+      @include before-after;
+    }
+  }
+  input:checked + label {
+    &:before {
+      // background
+      transform: translateY(-50%);
+    }
+  }
+  input:disabled {
+    & + label {
+      // bound
+      cursor: not-allowed !important;
+    }
+  }
+}
+
+.mt-star-garden {
+  @extend .mt-star;
+  label {
+    &:before {
+      // background
+      background: linear-gradient(#cac9d1 0%, #cac9d1 42%, #7fee7f 55%, #21bf73 100%);
+    }
+  }
+}
+
+.mt-star-tomato {
+  @extend .mt-star;
+  label {
+    &:before {
+      // background
+      background: linear-gradient(#cac9d1 0%, #cac9d1 42%, #f1a27d 55%, #ff6347 100%);
+    }
+  }
+}
+
+.mt-star-pink {
+  @extend .mt-star;
+  label {
+    &:before {
+      // background
+      background: linear-gradient(#cac9d1 0%, #cac9d1 42%, #ffc1d7 55%, #ff77a6 100%);
+    }
+  }
+}
+
+.mt-star-golden {
+  @extend .mt-star;
+  label {
+    &:before {
+      // background
+      background: linear-gradient(#cac9d1 0%, #cac9d1 42%, rgb(255, 237, 136) 55%, rgb(243, 207, 1) 100%);
+    }
+  }
+}

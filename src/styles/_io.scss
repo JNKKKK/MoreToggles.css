@@ -1,0 +1,104 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-io {
+  @include wrapper;
+  label {
+    // background
+    @include label;
+    width: 5.5em;
+    height: 2.5em;
+    border-radius: 2.5em;
+    background-image: linear-gradient(to right, #dedede 0%, #dedede 50%, #fe6845 50%, #fe6845 100%);
+    background-size: 11em 2.5em;
+    transition: all 0.3s ease;
+    &:before {
+      // circle
+      @include before-after;
+      width: 3em;
+      height: 3em;
+      top: -0.25em;
+      left: 0;
+      border-radius: 2em;
+      background: #fff;
+      transition: 0.3s ease;
+      box-shadow: 0 0.2em 0.45em rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+  }
+  input {
+    @include input-checkbox;
+    &:before,
+    &:after {
+      // I/O
+      @include before-after;
+      z-index: 0;
+      border-radius: 1em;
+    }
+    &:before {
+      // I
+      width: 0.4em;
+      height: 1.1em;
+      top: 0.7em;
+      left: 1.25em;
+      background: white;
+    }
+    &:after {
+      // O
+      width: 0.5em;
+      height: 0.5em;
+      top: 0.7em;
+      left: 3.5em;
+      background: transparent;
+      border: 0.3em solid #999;
+    }
+  }
+  input:checked + label {
+    // background
+    background-position: -100%;
+    &:before {
+      // circle
+      transform: translateX(2.5em);
+    }
+  }
+  input:disabled {
+    &:before {
+      // I
+      background: #999;
+    }
+    & + label {
+      // background
+      background: #ccc !important;
+      cursor: not-allowed !important;
+      &:before {
+        // circle
+        background: #ccc !important;
+        box-shadow: 0 0.2em 0.45em rgba(0, 0, 0, 0.5) !important;
+      }
+    }
+  }
+}
+.mt-io-yellow {
+  @extend .mt-io;
+  label {
+    background-image: linear-gradient(to right, #dedede 0%, #dedede 50%, #fddb3a 50%, #fddb3a 100%);
+  }
+}
+.mt-io-garden {
+  @extend .mt-io;
+  label {
+    background-image: linear-gradient(to right, #dedede 0%, #dedede 50%, #7fcd91 50%, #7fcd91 100%);
+  }
+}
+.mt-io-navi {
+  @extend .mt-io;
+  label {
+    background-image: linear-gradient(to right, #dedede 0%, #dedede 50%, #40bfc1 50%, #40bfc1 100%);
+  }
+}
+.mt-io-violet {
+  @extend .mt-io;
+  label {
+    background-image: linear-gradient(to right, #dedede 0%, #dedede 50%, #7e0cf5 50%, #7e0cf5 100%);
+  }
+}

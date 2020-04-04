@@ -28,7 +28,7 @@
     @include input-checkbox;
     &:before,
     &:after {
-      // icon cross/check
+      // cross/check
       @include before-after;
       height: 0.25em;
       border-radius: 0.125em;

@@ -1,6 +1,6 @@
 {
   "name": "moretoggles.css",
-  "version": "0.0.1",
+  "version": "0.2.1",
   "main": "src/moretoggles.scss",
   "repository": {
     "type": "git",
@@ -12,10 +12,11 @@
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "sass": "^1.25.0"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
   },
   "scripts": {
-    "build": "parcel build ./src/moretoggles.scss -d ./output/ --out-file moretoggles.min.css --no-source-maps",
+    "build": "node build.js",
     "serve-alltoggles": "parcel ./docs/src/allToggles.html",
     "build-alltoggles": "parcel build ./docs/src/allToggles.html -d ./docs/ --no-source-maps --public-url .",
     "serve-index": "parcel ./docs/src/index.html",

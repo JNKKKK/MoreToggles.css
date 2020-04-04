@@ -1,0 +1,141 @@
+@use "sass:color";
+@use "../base" as *;
+
+.mt-yesno {
+  @include wrapper;
+  label {
+    // background
+    @include label;
+    width: 9em;
+    height: 3.5em;
+    border-radius: 50px;
+    background: #f0134d;
+    transition: all 0.3s ease;
+    &:before,
+    &:after {
+      // Yes No
+      @include before-after;
+      font-family: sans-serif;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    &:before {
+      // Yes
+      @include before-after;
+      content: "Yes";
+      top: 0.75em;
+      left: 0.6em;
+      color: rgba(0, 0, 0, 0.2);
+    }
+    &:after {
+      // No
+      @include before-after;
+      content: "No";
+      top: 0.75em;
+      left: 5.3em;
+      color: #fff;
+    }
+  }
+  input {
+    @include input-checkbox;
+    &:before,
+    &:after {
+      // cross/check
+      @include before-after;
+      height: 0.25em;
+      border-radius: 0.125em;
+      background: #fff;
+      transition: 0.3s ease;
+    }
+    &:before {
+      // cross
+      width: 1.3875em;
+      transform: rotate(-45deg) translate(1.575em, 3.825em);
+    }
+    &:after {
+      // cross
+      width: 1.3875em;
+      transform: rotate(45deg) translate(3.825em, -1.575em);
+    }
+  }
+  input:checked {
+    &:before {
+      // check
+      width: 1.3625em;
+      transform: rotate(-45deg) translate(1.7375em, 4.05em);
+    }
+    &:after {
+      // check
+      width: 0.63em;
+      transform: rotate(45deg) translate(3.95em, -1.4625em);
+    }
+  }
+  input:checked + label {
+    // background
+    background: #40bfc1;
+    &:before {
+      // Yes
+      color: #fff;
+    }
+    &:after {
+      // No
+      color: rgba(0, 0, 0, 0.2);
+    }
+  }
+  input:disabled {
+    & {
+      cursor: not-allowed !important;
+    }
+    & + label {
+      // background
+      background: #ccc !important;
+      cursor: not-allowed !important;
+    }
+  }
+}
+
+.mt-yesno-garden {
+  @extend .mt-yesno;
+  label {
+    // background
+    background: #ff2e63;
+  }
+  input:checked + label {
+    // background
+    background: #21bf73;
+  }
+}
+.mt-yesno-matte {
+  @extend .mt-yesno;
+  label {
+    // background
+    background: #c9485b;
+  }
+  input:checked + label {
+    // background
+    background: #75b79e;
+  }
+}
+.mt-yesno-fruit {
+  @extend .mt-yesno;
+  label {
+    // background
+    background: #ff8364;
+  }
+  input:checked + label {
+    // background
+    background: #5f6caf;
+  }
+}
+.mt-yesno-blush {
+  @extend .mt-yesno;
+  label {
+    // background
+    background: #ff677d;
+  }
+  input:checked + label {
+    // background
+    background: #9399ff;
+  }
+}

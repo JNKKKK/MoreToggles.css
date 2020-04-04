@@ -27,7 +27,7 @@ You only have to add a new ClassName to the wrapper div and `MoreToggles.css` wi
 Import the stylesheet into your document's `<head>`
 ```html
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css/output/moretoggles.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.min.css">
 </head>
 ```
 Wrap an extra div around your `<input>` and `<label>`. Pick a style [here](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
@@ -95,7 +95,7 @@ In the `/output` folder, you can find all of the built CSS files. The naming con
 Example for importing only *Android* Style
 ```html
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css/output/moretoggles.android.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.android.min.css">
 </head>
 ```
 

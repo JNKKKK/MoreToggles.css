@@ -27,7 +27,7 @@
   input:checked + label {
     &:before {
       // circle
-      transform: translateX(0.8em);
+      transform: translateX(1.2em);
     }
   }
   input:disabled {

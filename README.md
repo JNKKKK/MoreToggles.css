@@ -165,3 +165,10 @@ MoreToggles.css is licensed under the MIT license. (https://opensource.org/licen
 
 ## Contributing
 This project is still in very early stage. Your contribution is very welcome. Feel free to submit a pull request!
+
+### General Workflow
+1. `npm run serve-alltoggles`
+2. Make your change and see live updates in the browser
+3. Make sure everything looks okay and the change does not break other styles
+4. `npm run build`
+5. `npm run build-alltoggles`

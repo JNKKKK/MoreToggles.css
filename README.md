@@ -12,7 +12,7 @@
 
 You only have to add a new ClassName to the wrapper div and `MoreToggles.css` will do the magic for you.
 
-[Check out **all available styles** here](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
+[Check out **all available styles** here](https://jnkkkk.github.io/MoreToggles.css/)
 
 **Features**
 
@@ -30,7 +30,7 @@ Import the stylesheet into your document's `<head>`
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.min.css">
 </head>
 ```
-Wrap an extra div around your `<input>` and `<label>`. Pick a style [here](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
+Wrap an extra div around your `<input>` and `<label>`. Pick a style [here](https://jnkkkk.github.io/MoreToggles.css/)
 . Add the corresponding `mt-*` class to `<div>`.
 
 ```html
@@ -44,7 +44,7 @@ Wrap an extra div around your `<input>` and `<label>`. Pick a style [here](https
 ## Styles
 `MoreToggles.css` currently has 13 different styles. And for each style, several color patterns are provided.
 
-[Check out **all available styles** here](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
+[Check out **all available styles** here](https://jnkkkk.github.io/MoreToggles.css/)
 
 List of all the available class names:
 
@@ -166,9 +166,14 @@ MoreToggles.css is licensed under the MIT license. (https://opensource.org/licen
 ## Contributing
 This project is still in very early stage. Your contribution is very welcome. Feel free to submit a pull request!
 
-### General Workflow
-1. `npm run serve-alltoggles`
+### Development Workflow
+
+1. `npm install`
+1. `npm run start` This will start the webpack-dev-server and render the showcase page
 2. Make your change and see live updates in the browser
-3. Make sure everything looks okay and the change does not break other styles
-4. `npm run build`
-5. `npm run build-alltoggles`
+
+Build the [showcase page](https://jnkkkk.github.io/MoreToggles.css/)
+1. `npm run build-doc`
+
+Build and minify css
+1. `npm run build-css`

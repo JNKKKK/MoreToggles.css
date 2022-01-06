@@ -6,5 +6,4 @@
 
 ------
 
-- [Project Home Page](https://jnkkkk.github.io/MoreToggles.css/)
-- [All Available Styles](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
+- [All Available Styles](https://jnkkkk.github.io/MoreToggles.css/)

@@ -1,7 +1,6 @@
 {
   "name": "moretoggles.css",
-  "version": "0.2.1",
-  "main": "src/moretoggles.scss",
+  "version": "0.4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/JNKKKK/MoreToggles.css.git"
@@ -11,15 +10,24 @@
     "name": "Enkai Ji"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.3"
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-react-jsx": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "cssnano": "^5.0.14",
+    "postcss": "^8.4.5",
+    "preact": "^10.6.4",
+    "sass": "^1.46.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2",
+    "webpack-merge": "^5.8.0"
   },
   "scripts": {
-    "build": "node build.js",
-    "serve-alltoggles": "parcel ./docs/src/allToggles.html",
-    "build-alltoggles": "parcel build ./docs/src/allToggles.html -d ./docs/ --no-source-maps --public-url .",
-    "serve-index": "parcel ./docs/src/index.html",
-    "build-index": "parcel build ./docs/src/index.html -d ./docs/ --no-source-maps --public-url ."
+    "build-css": "node build.js",
+    "build-doc": "webpack --config webpack.prod.js",
+    "start": "webpack serve --open --config webpack.dev.js"
   }
 }

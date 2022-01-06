@@ -1,4 +1,4 @@
-import "../../src/moretoggles.scss"
+import "../src/moretoggles.scss"
 // import "../../output/moretoggles.min.css"
 import "./index.scss"
 import { Fragment, h, Component, render } from 'preact'

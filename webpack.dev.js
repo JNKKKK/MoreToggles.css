@@ -3,18 +3,18 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
-        index: './docs/src/index.js',
+        index: './docs-src/index.js',
     },
     devtool: 'inline-source-map',
     devServer: {
-        static: './docs/dist',
+        static: './docs',
     },
     plugins: [
     ],
     target: 'web',
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'docs', 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         clean: false,
     },
     module: {

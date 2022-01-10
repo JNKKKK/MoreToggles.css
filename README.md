@@ -1,5 +1,7 @@
 # MoreToggles.css
 
+`MoreToggles.css` is a **pure CSS** library that provides you with a variety of **nice-looking toggles**. 
+
 [![Toggles _1_.png](https://i.loli.net/2020/03/06/WRC2jYFuo1SqpVZ.png)](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
 
 ![release badge](https://img.shields.io/github/v/release/JNKKKK/MoreToggles.css?include_prereleases&style=flat-square) 
@@ -8,9 +10,7 @@
 
 ------
 
-`MoreToggles.css` is a **pure CSS** library that provides you with a variety of **nice-looking toggles**. 
-
-You only have to add a new ClassName to the wrapper div and `MoreToggles.css` will do the magic for you.
+You only have to attach a class to the wrapper div and `MoreToggles.css` will do the magic for you.
 
 [Check out **all available styles** here](https://jnkkkk.github.io/MoreToggles.css/)
 
@@ -40,6 +40,24 @@ Wrap an extra div around your `<input>` and `<label>`. Pick a style [here](https
 </div>
 ```
 
+### Moretoggles.css is available through npm
+```
+npm install moretoggles
+```
+**Import in js/jsx**
+```
+// Import the minified CSS
+import '../node_modules/moretoggles/output/moretoggles.min.css'
+
+// Or
+// import the Sass source file
+import '../node_modules/moretoggles/src/moretoggles.scss'
+```
+Or **import in Sass**
+```sass
+@charset "utf-8";
+@import "../node_modules/moretoggles/src/moretoggles";
+```
 
 ## Styles
 `MoreToggles.css` currently has 13 different styles. And for each style, several color patterns are provided.
@@ -170,10 +188,12 @@ This project is still in very early stage. Your contribution is very welcome. Fe
 
 1. `npm install`
 1. `npm run start` This will start the webpack-dev-server and render the showcase page
-2. Make your change and see live updates in the browser
+1. Start developing and see live updates in the browser
+
+Before commit, you should build the **showcase page** and **compile Sass to css in /output**. Please follow the details below.
 
 Build the [showcase page](https://jnkkkk.github.io/MoreToggles.css/)
-1. `npm run build-doc`
+- `npm run build-doc`
 
 Build and minify css
-1. `npm run build-css`
+- `npm run build-css`

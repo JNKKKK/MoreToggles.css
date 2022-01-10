@@ -40,12 +40,12 @@ Wrap an extra div around your `<input>` and `<label>`. Pick a style [here](https
 </div>
 ```
 
-### Moretoggles.css is available through npm
-```
+### Moretoggles.css is also available through NPM
+```bash
 npm install moretoggles
 ```
 **Import in js/jsx**
-```
+```js
 // Import the minified CSS
 import '../node_modules/moretoggles/output/moretoggles.min.css'
 
@@ -54,7 +54,7 @@ import '../node_modules/moretoggles/output/moretoggles.min.css'
 import '../node_modules/moretoggles/src/moretoggles.scss'
 ```
 Or **import in Sass**
-```sass
+```scss
 @charset "utf-8";
 @import "../node_modules/moretoggles/src/moretoggles";
 ```

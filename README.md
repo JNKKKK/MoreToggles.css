@@ -1,8 +1,12 @@
 # MoreToggles.css
 
+<<<<<<< HEAD
 `MoreToggles.css` is a **pure CSS** library that provides you with a variety of **nice-looking toggles**. 
 
 [![Toggles _1_.png](https://i.loli.net/2020/03/06/WRC2jYFuo1SqpVZ.png)](https://jnkkkk.github.io/MoreToggles.css/allToggles.html)
+=======
+[![Toggles _1_.png](https://i.loli.net/2020/03/06/WRC2jYFuo1SqpVZ.png)](https://jnkkkk.github.io/MoreToggles.css/)
+>>>>>>> ee4ad4f9a4081e6678fd4c6c04c263de5ad2ba7b
 
 ![release badge](https://img.shields.io/github/v/release/JNKKKK/MoreToggles.css?include_prereleases&style=flat-square) 
 ![jsDelivr hits badge](https://img.shields.io/jsdelivr/gh/hm/JNKKKK/MoreToggles.css?style=flat-square) 
@@ -108,7 +112,9 @@ List of all the available class names:
 ## Import Only a Single Style
 If you care about the size of CSS files. Instead of import `moretoggles.min.css`, you can import the styles you want sepsrately.
 
-In the `/output` folder, you can find all of the built CSS files. The naming convention is `moretoggles.STYLE_NAME.min.css`
+In the `/output` folder, you can find all of the built CSS files.
+
+The naming convention is `moretoggles.STYLE_NAME.min.css`
 
 Example for importing only *Android* Style
 ```html
@@ -187,8 +193,8 @@ This project is still in very early stage. Your contribution is very welcome. Fe
 ### Development Workflow
 
 1. `npm install`
-1. `npm run start` This will start the webpack-dev-server and render the showcase page
-1. Start developing and see live updates in the browser
+2. `npm run start` This will start the webpack-dev-server and render the [showcase page](https://jnkkkk.github.io/MoreToggles.css/)
+3. Start developing and see live updates in the browser
 
 Before commit, you should build the **showcase page** and **compile Sass to css in /output**. Please follow the details below.
 

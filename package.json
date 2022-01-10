@@ -1,10 +1,11 @@
 {
   "name": "moretoggles",
-  "version": "0.4.0",
+  "version": "0.4.2",
   "license": "MIT",
   "author": {
     "name": "Enkai Ji"
   },
+  "description": "A CSS library for nice-looking toggles",
   "main": "src/moretoggles.sass",
   "unpkg": "output/moretoggles.min.css",
   "style": "output/moretoggles.min.css",

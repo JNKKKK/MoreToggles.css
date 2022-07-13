@@ -2,7 +2,7 @@
 
 `MoreToggles.css` is a **pure CSS** library that provides you with a variety of **nice-looking toggles**. 
 
-[![Toggles _1_.png](https://i.loli.net/2020/03/06/WRC2jYFuo1SqpVZ.png)](https://jnkkkk.github.io/MoreToggles.css/)
+[![banner](https://github.com/JNKKKK/MoreToggles.css/raw/master/banner.png)](https://jnkkkk.github.io/MoreToggles.css/)
 
 ![release badge](https://img.shields.io/github/v/release/JNKKKK/MoreToggles.css?include_prereleases&style=flat-square) 
 ![jsDelivr hits badge](https://img.shields.io/jsdelivr/gh/hm/JNKKKK/MoreToggles.css?style=flat-square) 
@@ -64,49 +64,27 @@ Or **import in Sass**
 
 [Check out **all available styles** here](https://jnkkkk.github.io/MoreToggles.css/)
 
-List of all the available class names:
+To choose a style, replce the class name of the wrapper `<div>` with one of the options [here](https://jnkkkk.github.io/MoreToggles.css/).
 
-*IOS* Style
-`mt-ios` `mt-ios-red` `mt-ios-blue`
+```html
+<div class="REPLACE_ME"> 
+  <input id="2" type="checkbox" />
+  <label for="2"></label>
+</div>
+```
 
-*Android* Style
-`mt-android` `mt-android-indigo` `mt-android-violet` `mt-android-pink` `mt-android-orange`
+Example for `.mt-android-pink` style
 
-*IO Switch* Style
-`mt-io` `mt-io-yellow` `mt-io-garden` `mt-io-navi` `mt-io-violet`
+```html
+<div class="mt-android-pink"> 
+  <input id="3" type="checkbox" />
+  <label for="3"></label>
+</div>
+```
 
-*Normal* Style
-`mt-normal` `mt-normal-garden` `mt-normal-navi` `mt-normal-violet` `mt-normal-juice`
-
-*Transparent* Style
-`mt-transparent` `mt-transparent-navi` `mt-transparent-violet` `mt-transparent-blood` `mt-transparent-brown`
-
-*Check* Style
-`mt-check` `mt-check-garden` `mt-check-matte` `mt-check-fruit` `mt-check-pink`
-
-*Yes No* Style
-`mt-yesno` `mt-yesno-garden` `mt-yesno-matte` `mt-yesno-fruit` `mt-yesno-blush`
-
-*Square* Style
-`mt-square` `mt-square-garden` `mt-square-tomato` `mt-square-matcha` `mt-square-pink`
-
-*Square 3d* Style
-`mt-square3d` `mt-square3d-garden` `mt-square3d-tomato` `mt-square3d-matcha` `mt-square3d-blush`
-
-*Emoji* Style
-`mt-emoji-mood` `mt-emoji-gender` `mt-emoji-pet` `mt-emoji-mute` `mt-emoji-like`
-
-*Star* Style
-`mt-star` `mt-star-garden` `mt-star-tomato` `mt-star-pink` `mt-star-golden`
-
-*Heart* Style
-`mt-heart` `mt-heart-blush` `mt-heart-indigo` `mt-heart-pink` `mt-heart-golden`
-
-*Icon Switch* Style
-`mt-icon-music` `mt-icon-ring` `mt-icon-mic` `mt-icon-cam` `mt-icon-pin`
 
 ## Import Only a Single Style
-If you care about the size of CSS files. Instead of import `moretoggles.min.css`, you can import the styles you want sepsrately.
+If you care about the size of CSS files. Instead of importing `moretoggles.min.css`, you can import single style separately.
 
 In the `/output` folder, you can find all of the built CSS files.
 
@@ -119,12 +97,12 @@ Example for importing only *Android* Style
 </head>
 ```
 
-## Scaling
-You can scale the toggles by assign a font-size attribute `style="font-size:10px;"` to the wrapper div. You can try different numbers and the toggle will scale smoothly.
+## Size / Scaling
+You can change the size of the toggles by assigning a font-size attribute `style="font-size:10px;"` to the wrapper div. You can try different numbers and the toggle will scale smoothly.
 ```html
 <div class="mt-ios" style="font-size:10px;">
-  <input id="3" type="checkbox" />
-  <label for="3"></label>
+  <input id="4" type="checkbox" />
+  <label for="4"></label>
 </div>
 ```
 
@@ -132,8 +110,8 @@ You can scale the toggles by assign a font-size attribute `style="font-size:10px
 Just like regular checkbox, you can add `disabled` attribute to `<input>` tag.
 ```html
 <div class="mt-ios">
-  <input id="4" type="checkbox" disabled/>
-  <label for="4"></label>
+  <input id="5" type="checkbox" disabled/>
+  <label for="5"></label>
 </div>
 ```
 
@@ -141,12 +119,12 @@ Just like regular checkbox, you can add `disabled` attribute to `<input>` tag.
 Since the toggle is actually an `<input>` with `type="checkbox"`, you can use addEventListener to listen to the onchange event.
 ```html
 <div class="mt-ios"> 
-  <input id="5" type="checkbox" />
-  <label for="5"></label>
+  <input id="6" type="checkbox" />
+  <label for="6"></label>
 </div>
 
 <script>
-  const toggle = document.getElementById('5');
+  const toggle = document.getElementById('6');
 
   toggle.addEventListener('change', (event) => {
     if (event.target.checked) {
@@ -157,9 +135,10 @@ Since the toggle is actually an `<input>` with `type="checkbox"`, you can use ad
   });
 </script>
 ```
+
 ## Notice
 
-Nest the `<input>` directly inside the `<label>` is **NOT supported**, although it is valid HTML syntax.
+Nesting the `<input>` directly inside the `<label>` is **NOT supported**, although it is valid HTML syntax.
 
 **Don't** ☹️
 ```html
@@ -176,8 +155,6 @@ Nest the `<input>` directly inside the `<label>` is **NOT supported**, although 
   <label for="1"></label>
 </div>
 ```
-
-
 
 
 ## License

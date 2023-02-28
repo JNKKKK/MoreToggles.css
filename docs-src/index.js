@@ -1,5 +1,5 @@
 import "../src/moretoggles.scss"
-// import "../../output/moretoggles.min.css"
+// import "../output/moretoggles.min.css"
 import "./index.scss"
 import { Fragment, h, Component, render } from 'preact'
 

@@ -167,12 +167,7 @@ This project is still in very early stage. Your contribution is very welcome. Fe
 
 1. `npm install`
 2. `npm run start` This will start the webpack-dev-server and render the [showcase page](https://jnkkkk.github.io/MoreToggles.css/)
-3. Start developing and see live updates in the browser
-
-Before commit, you should build the **showcase page** and **compile Sass to css in /output**. Please follow the details below.
-
-Build the [showcase page](https://jnkkkk.github.io/MoreToggles.css/)
-- `npm run build-doc`
-
-Build and minify css
-- `npm run build-css`
+3. Make changes and see live updates in the browser
+4. Build the **[showcase page](https://jnkkkk.github.io/MoreToggles.css/)** and **compile Sass to CSS in `/output`**
+  - `npm run build-doc`
+  - `npm run build-css`

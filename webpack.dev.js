@@ -7,7 +7,11 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        static: './docs',
+        historyApiFallback: true,
+        allowedHosts: 'all',
+        static: {
+            directory: path.join(__dirname, 'docs'),
+        },
     },
     plugins: [
     ],

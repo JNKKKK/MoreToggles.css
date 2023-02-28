@@ -27,7 +27,7 @@ You only have to attach a class to the wrapper div and `MoreToggles.css` will do
 Import the stylesheet into your document's `<head>`
 ```html
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@1.0.0/output/moretoggles.min.css">
 </head>
 ```
 Wrap an extra div around your `<input>` and `<label>`. Pick a style [here](https://jnkkkk.github.io/MoreToggles.css/)
@@ -40,7 +40,7 @@ Wrap an extra div around your `<input>` and `<label>`. Pick a style [here](https
 </div>
 ```
 
-### Moretoggles.css is also available through NPM
+### Moretoggles.css is also available through [NPM](https://www.npmjs.com/package/moretoggles)
 ```bash
 npm install moretoggles
 ```
@@ -169,5 +169,5 @@ This project is still in very early stage. Your contribution is very welcome. Fe
 2. `npm run start` This will start the webpack-dev-server and render the [showcase page](https://jnkkkk.github.io/MoreToggles.css/)
 3. Make changes and see live updates in the browser
 4. Build the **[showcase page](https://jnkkkk.github.io/MoreToggles.css/)** and **compile Sass to CSS in `/output`**
-  - `npm run build-doc`
-  - `npm run build-css`
+   - `npm run build-doc`
+   - `npm run build-css`

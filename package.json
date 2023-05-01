@@ -26,7 +26,7 @@
     "@babel/plugin-transform-react-jsx": "^7.21.0",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
-    "cssnano": "^5.1.15",
+    "cssnano": "^6.0.1",
     "postcss": "^8.4.21",
     "preact": "^10.13.0",
     "sass": "^1.58.3",

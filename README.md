@@ -5,7 +5,8 @@
 [![banner](https://github.com/JNKKKK/MoreToggles.css/raw/master/banner.png)](https://jnkkkk.github.io/MoreToggles.css/)
 
 ![release badge](https://img.shields.io/github/v/release/JNKKKK/MoreToggles.css?include_prereleases&style=flat-square) 
-![jsDelivr hits badge](https://img.shields.io/jsdelivr/gh/hm/JNKKKK/MoreToggles.css?style=flat-square) 
+![jsDelivr hits badge](https://img.shields.io/jsdelivr/gh/hm/JNKKKK/MoreToggles.css?style=flat-square)
+![npm](https://img.shields.io/npm/dm/moretoggles?style=flat-square)
 ![license badge](https://img.shields.io/github/license/JNKKKK/MoreToggles.css?style=flat-square) 
 
 ------
